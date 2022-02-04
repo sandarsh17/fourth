@@ -16,16 +16,11 @@ steps{
 echo "deploying the app"
 }
 }
-
-
-
-
-
+post{
+failure{
+echo "failed"
 }
-
-
 }
-
-
-
+}
+}
 }
