@@ -14,8 +14,14 @@ echo "testing the app"
 stage("deploy"){
 steps{
 echo "deploying the app"
+
 }
+
 }
+stage('email notification"){
+mail bcc: '', body: 'Hi welcome to jenkins email alert', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'sandarsha.h.m@continental-corporation.com'
+}
+
 post{
 failure{
 echo "failed"
